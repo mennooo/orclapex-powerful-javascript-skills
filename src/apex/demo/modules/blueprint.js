@@ -1,0 +1,1 @@
+kscope.myModule

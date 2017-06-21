@@ -1,19 +1,5 @@
 /* global apex kscope */
 ;(function ($, apex, kscope) {
-  // Save state of dialogs in an array
-  let dialogs$ = []
-
-  // Function to open a dialog
-  function open (da) {
-    let regionId = da.action.affectedRegionId
-    dialogs$[regionId] = apex.region(regionId).element.dialog('open')
-  }
-
-  // Function to close a dialog
-  function close (da) {
-    dialogs$[da.action.affectedRegionId].dialog('close')
-  }
-
   // Function to set dialog title dynamically
   function setTitle (title) {
     let idItem = 'pPageSubmissionId'
@@ -35,8 +21,6 @@
 
   // Make the functions public
   kscope.dialog = {
-    open: open,
-    close: close,
     setTitle: setTitle
   }
 })(apex.jQuery, apex, kscope)
