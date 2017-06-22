@@ -1,1 +1,1 @@
-kscope.myModule
+/* global kscope */
