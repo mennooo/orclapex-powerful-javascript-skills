@@ -1,3 +1,1 @@
-(function (window) {
-  window.kscope = {}
-})(window)
+window.kscope = {}
